@@ -22,6 +22,7 @@
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -46,7 +47,7 @@
                     </p>
                     <div class="hero-buttons">
                         <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#experience" class="btn btn-secondary">View My Work</a>
+                        <a href="#portfolio" class="btn btn-secondary">View My Work</a>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/mbimbim" target="_blank" aria-label="GitHub">
@@ -353,6 +354,63 @@
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">Beberapa aplikasi yang saya kembangkan. Klik untuk melihat source code di GitHub.</p>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <a class="portfolio-card" href="https://github.com/mbimbim/flutter-smart-task-manager" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-thumb">
+                        <img src="assets/flutter-smart-task-manager-thumb.png" alt="Smart Task Management App thumbnail" loading="lazy"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 200 140&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23f3f4f6&quot;/><text x=&quot;50%&quot; y=&quot;50%25&quot; dominant-baseline=&quot;middle&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; fill=&quot;%23888&quot;>App Thumbnail</text></svg>'">
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-badge">Flutter</div>
+                        <h3 class="portfolio-title">Smart Task Management App</h3>
+                        <p class="portfolio-desc">Proyek ini saya gunakan sebagai portfolio pribadi untuk menunjukkan kemampuan Full-stack Mobile Development (Flutter + PHP + MySQL) dengan arsitektur yang rapi dan scalable.</p>
+                        <div class="portfolio-meta">
+                            <span><i class="fas fa-code-branch"></i> Lihat di GitHub</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 2 -->
+                <a class="portfolio-card" href="https://github.com/mbimbim/NAMA_REPO_APLIKASI_2" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-thumb">
+                        <img src="assets/app-2-thumb.png" alt="Nama Aplikasi 2 thumbnail" loading="lazy"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 200 140&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23f3f4f6&quot;/><text x=&quot;50%&quot; y=&quot;50%25&quot; dominant-baseline=&quot;middle&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; fill=&quot;%23888&quot;>App Thumbnail</text></svg>'">
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-badge">Android (Java)</div>
+                        <h3 class="portfolio-title">Nama Aplikasi 2</h3>
+                        <p class="portfolio-desc">Deskripsi singkat aplikasi lain (misalnya aplikasi internal perusahaan).</p>
+                        <div class="portfolio-meta">
+                            <span><i class="fas fa-code-branch"></i> Lihat di GitHub</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Project 3 (contoh lain, opsional) -->
+                <a class="portfolio-card" href="https://github.com/mbimbim/NAMA_REPO_APLIKASI_3" target="_blank" rel="noopener noreferrer">
+                    <div class="portfolio-thumb">
+                        <img src="assets/app-3-thumb.png" alt="Nama Aplikasi 3 thumbnail" loading="lazy"
+                            onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 200 140&quot;><rect width=&quot;100%&quot; height=&quot;100%&quot; fill=&quot;%23f3f4f6&quot;/><text x=&quot;50%&quot; y=&quot;50%25&quot; dominant-baseline=&quot;middle&quot; text-anchor=&quot;middle&quot; font-size=&quot;14&quot; fill=&quot;%23888&quot;>App Thumbnail</text></svg>'">
+                    </div>
+                    <div class="portfolio-body">
+                        <div class="portfolio-badge">Flutter</div>
+                        <h3 class="portfolio-title">Nama Aplikasi 3</h3>
+                        <p class="portfolio-desc">Tambahkan project lain jika diperlukan, atau hapus card ini.</p>
+                        <div class="portfolio-meta">
+                            <span><i class="fas fa-code-branch"></i> Lihat di GitHub</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
         <div class="container">
@@ -449,6 +507,14 @@
 
                 <div class="contact-card">
                     <div class="contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <a href="https://wa.me/6281260991438" target="_blank" rel="noopener noreferrer">Chat via WhatsApp</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
                     <h3>Phone</h3>
@@ -473,7 +539,7 @@
             </div>
 
             <!-- Contact Form -->
-            <div class="contact-form-wrapper">
+            <!-- <div class="contact-form-wrapper">
                 <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -491,7 +557,7 @@
                         <i class="fas fa-paper-plane"></i> Send Message
                     </button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </section>
 

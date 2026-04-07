@@ -131,27 +131,27 @@ if (skillsSection) {
 // ===================================
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+// contactForm.addEventListener('submit', (e) => {
+//     e.preventDefault();
     
-    // Get form values
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
+//     // Get form values
+//     const name = document.getElementById('name').value;
+//     const email = document.getElementById('email').value;
+//     const subject = document.getElementById('subject').value;
+//     const message = document.getElementById('message').value;
     
-    // Create mailto link with form data
-    const mailtoLink = `mailto:pratamabima37@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+//     // Create mailto link with form data
+//     const mailtoLink = `mailto:pratamabima37@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
     
-    // Open default email client
-    window.location.href = mailtoLink;
+//     // Open default email client
+//     window.location.href = mailtoLink;
     
-    // Show success message
-    alert('Thank you for your message! Your default email client will open.');
+//     // Show success message
+//     alert('Thank you for your message! Your default email client will open.');
     
-    // Reset form
-    contactForm.reset();
-});
+//     // Reset form
+//     contactForm.reset();
+// });
 
 // ===================================
 // Active Navigation Link on Scroll

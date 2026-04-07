@@ -810,6 +810,121 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===================================
+   Portfolio Section
+   =================================== */
+.portfolio {
+    background-color: var(--light-bg);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: var(--white);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    transition: var(--transition);
+}
+
+.portfolio-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.02));
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
+}
+
+.portfolio-card:hover::before {
+    opacity: 1;
+}
+
+.portfolio-thumb {
+    width: 100%;
+    position: relative;
+    padding-bottom: 56%;
+    background: var(--light-bg);
+    overflow: hidden;
+}
+
+.portfolio-thumb img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-body {
+    padding: 16px 18px 18px;
+}
+
+.portfolio-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    background-color: rgba(52, 152, 219, 0.08);
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-title {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-desc {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-meta i {
+    margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===================================
    Contact Section
    =================================== */
 .contact {
@@ -818,7 +933,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 30px;
     margin-bottom: 50px;
 }
